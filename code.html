@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="h-full overflow-hidden" lang="en"><head><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Localz Hub | Opening Soon</title>
+<!-- Google Fonts: Work Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#f2930d',
+            dark: '#0a0a0a',
+          },
+          fontFamily: {
+            sans: ['Work Sans', 'sans-serif'],
+          },
+          borderRadius: {
+            'custom': '8px',
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 1s ease-out forwards',
+            'float': 'floating 6s ease-in-out infinite',
+            'steam': 'steamMove 8s linear infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            floating: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            steamMove: {
+              '0%': { transform: 'translateY(0) scale(1)', opacity: '0' },
+              '50%': { opacity: '0.3' },
+              '100%': { transform: 'translateY(-100px) scale(1.5)', opacity: '0' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="background-effects">
+    /* Subtle steam effect overlays */
+    .steam-container {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .steam-particle {
+      position: absolute;
+      bottom: -20px;
+      background: rgba(255, 255, 255, 0.1);
+      filter: blur(20px);
+      border-radius: 50%;
+    }
+    /* Glow effect for brand elements */
+    .glow-brand {
+      box-shadow: 0 0 25px rgba(242, 147, 13, 0.3);
+    }
+    /* Radial gradient for professional kitchen vibe */
+    .kitchen-vibe {
+      background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+    }
+  
+    @keyframes toss {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      40% { transform: translateY(-15px) rotate(-15deg); }
+      60% { transform: translateY(2px) rotate(5deg); }
+    }
+    .animate-toss {
+      animation: toss 2.5s ease-in-out infinite;
+    }
+    @keyframes cooking-steam {
+      0% { transform: translateY(0) scaleX(1); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: translateY(-20px) scaleX(1.5); opacity: 0; }
+    }
+    .animate-cooking-steam {
+      animation: cooking-steam 2s ease-out infinite;
+    }
+  </style>
+<style data-purpose="typography">
+    .text-glow {
+      text-shadow: 0 0 15px rgba(242, 147, 13, 0.4);
+    }
+  </style>
+<style data-purpose="responsive-tweaks">
+    img[alt="The Localz Hub Logo"] {
+      height: clamp(3.5rem, 12vh, 14rem) !important;
+      max-width: min(90vw, 28rem) !important;
+    }
+    @media (max-height: 560px) {
+      .hero-description {
+        display: none;
+      }
+    }
+    @media (max-height: 460px) {
+      .hero-copyright {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans kitchen-vibe selection:bg-brand selection:text-white h-[100svh] overflow-hidden grid grid-rows-[auto_1fr_auto]">
+<!-- BEGIN: Steam Animation Background -->
+<div class="steam-container" data-purpose="steam-background">
+<div class="steam-particle animate-steam w-64 h-64 left-[10%]" style="animation-delay: 0s;"></div>
+<div class="steam-particle animate-steam w-80 h-80 left-[40%]" style="animation-delay: 2s;"></div>
+<div class="steam-particle animate-steam w-56 h-56 left-[70%]" style="animation-delay: 4s;"></div>
+</div>
+<!-- END: Steam Animation Background -->
+<!-- BEGIN: MainHeader -->
+<header class="relative z-10 w-full px-4 py-[clamp(0.5rem,2vh,1.25rem)] sm:px-6 md:px-12 flex justify-center items-center" data-purpose="site-header">
+<div class="max-w-7xl w-full flex justify-center">
+<img alt="The Localz Hub Logo" class="h-40 md:h-64 object-contain drop-shadow-2xl transition-all duration-500" src="Gemini_Generated_Image_7ascfh7ascfh7asc.png"/>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="relative z-10 min-h-0 flex items-center justify-center px-4 sm:px-6" data-purpose="hero-section">
+<section class="max-w-2xl w-full text-center animate-float">
+<!-- Headline Group -->
+<div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+<div class="mb-[clamp(0.75rem,3vh,2.5rem)] flex justify-center animate-fade-in-up" style="animation-delay: 0.1s;">
+<div class="relative text-brand">
+<span class="material-symbols-outlined text-[clamp(2.25rem,9vmin,4.5rem)] animate-toss" style="font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;">skillet</span>
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 flex gap-2 justify-center w-full">
+<div class="w-1 h-6 bg-brand/40 rounded-full animate-cooking-steam" style="animation-delay: 0s;"></div>
+<div class="w-1 h-8 bg-brand/60 rounded-full animate-cooking-steam" style="animation-delay: 0.5s;"></div>
+<div class="w-1 h-6 bg-brand/40 rounded-full animate-cooking-steam" style="animation-delay: 1s;"></div>
+</div>
+</div>
+</div><h1 class="text-[clamp(1.6rem,5vmin,3.25rem)] leading-tight font-bold tracking-tight mb-[clamp(0.75rem,2.5vh,1.5rem)] text-glow">
+          We’re Cooking <span class="text-brand">Something New</span>
+</h1>
+<p class="hero-description text-[clamp(0.95rem,2.2vh,1.25rem)] text-gray-400 mb-[clamp(0.75rem,3vh,2.5rem)] leading-relaxed font-light">
+          Our chefs are preparing a new digital experience.<br class="hidden md:block"/> Stay tuned for the grand reveal.
+        </p>
+</div>
+<!-- CTA Container -->
+</section>
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="relative z-10 w-full px-4 py-[clamp(0.5rem,2vh,1rem)] sm:px-6 border-t border-white/5" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto flex flex-col items-center gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+<p class="text-[clamp(0.7rem,1.8vh,0.875rem)] font-semibold tracking-[0.2em] uppercase text-brand">Coming Soon</p>
+</div>
+<p class="hero-copyright text-xs text-gray-600">© 2023 The Localz Hub. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: Interactions -->
+<!-- END: Interactions -->
+</body></html>
