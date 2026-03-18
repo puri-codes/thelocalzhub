@@ -1,3 +1,5 @@
+import { Instagram, Facebook } from "lucide-react";
+
 export function Footer() {
   return (
     <footer className="bg-background border-t border-border py-12">
@@ -9,8 +11,12 @@ export function Footer() {
           &copy; {new Date().getFullYear()} The Localz Hub. All rights reserved.
         </div>
         <div className="flex items-center space-x-6">
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Instagram</a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Facebook</a>
+          <a href="https://www.instagram.com/the_localz_hub/" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Instagram className="h-5 w-5" />
+          </a>
+          <a href="https://www.facebook.com/people/The-Localz-Hub/61582702912993/#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Facebook className="h-5 w-5" />
+          </a>
         </div>
       </div>
     </footer>

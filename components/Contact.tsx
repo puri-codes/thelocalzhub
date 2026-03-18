@@ -20,7 +20,7 @@ export function Contact() {
           >
             <h3 className="text-sm font-mono text-primary uppercase tracking-widest mb-4">Location</h3>
             <p className="text-lg text-foreground font-light">
-              123 Culinary Avenue<br />
+              Dhumbhrai Pipal Bot,<br />
               Kathmandu, Nepal
             </p>
           </motion.div>
@@ -33,7 +33,7 @@ export function Contact() {
           >
             <h3 className="text-sm font-mono text-primary uppercase tracking-widest mb-4">Hours</h3>
             <p className="text-lg text-foreground font-light">
-              Mon - Sun<br />
+              Sun - Sat<br />
               8:00 AM - 11:00 PM
             </p>
           </motion.div>
@@ -46,8 +46,8 @@ export function Contact() {
           >
             <h3 className="text-sm font-mono text-primary uppercase tracking-widest mb-4">Contact</h3>
             <p className="text-lg text-foreground font-light">
-              +977 980-0000000<br />
-              hello@thelocalzhub.com
+              +977 9813027212<br />
+              mail@thelocalzhub.com.np
             </p>
           </motion.div>
         </div>

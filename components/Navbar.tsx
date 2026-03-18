@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
 import * as React from "react";
@@ -38,7 +39,7 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="logo.png" className="inline-flex items-center">
+            <a href="/" className="inline-flex items-center">
               <Image
                 src="/logo.png"
                 alt="The Localz Hub logo"
@@ -63,9 +64,10 @@ export function Navbar() {
             ))}
           </div>
 
+
           {/* Right side actions */}
           <div className="hidden md:flex items-center space-x-6">
-            {mounted && (
+            {/* {mounted && (
               <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="p-2 rounded-full hover:bg-muted transition-colors text-foreground hover:text-foreground"
@@ -73,7 +75,7 @@ export function Navbar() {
               >
                 {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </button>
-            )}
+            )} */}
             <a
               href="/menu"
               className="px-6 py-2.5 bg-foreground text-background dark:bg-primary dark:text-ink text-sm font-medium rounded-full hover:opacity-90 transition-opacity"

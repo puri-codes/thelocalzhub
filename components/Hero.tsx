@@ -41,13 +41,13 @@ export function Hero() {
           >
             <a
               href="/#contact"
-              className="w-full sm:w-auto px-8 py-4 bg-foreground text-background dark:bg-primary dark:text-ink text-sm font-medium rounded-full hover:opacity-90 transition-all hover:scale-105"
+              className="w-full sm:w-auto px-8 py-4 bg-background text-foreground border border-border dark:bg-primary dark:text-ink text-sm font-medium rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Contact Us
             </a>
             <a
               href="/menu"
-              className="w-full sm:w-auto px-8 py-4 bg-transparent text-foreground border border-border dark:border-primary/30 text-sm font-medium rounded-full hover:bg-muted dark:hover:bg-primary/10 transition-all"
+              className="w-full sm:w-auto px-8 py-4 bg-gold text-foreground border border-border dark:border-primary/30 text-sm font-medium rounded-full hover:bg-muted dark:hover:bg-primary/10 transition-all"
             >
               View Menu
             </a>

@@ -53,7 +53,7 @@ export function About() {
                 Hub
               </h3>
               <div className="mt-8 text-primary font-mono text-sm tracking-[0.3em] uppercase">
-                Est. 2024
+                Est. 2025
               </div>
             </div>
           </motion.div>
